@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project </title>
+    <title>Project Overview - Kaveri Vana (Smart City)</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -31,7 +32,7 @@
             max-width: 1200px;
             margin: auto;
         }
-        section h2 {
+        section h2, h3 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
             border-bottom: 2px solid #06b6d4;
@@ -52,21 +53,15 @@
         table th, table td {
             padding: 1rem;
             border: 1px solid #ffffff;
-            transition: background-color 0.3s ease;
         }
-        table th {
-            background-color: #0ea5e9;
-            color: #ffffff;
+        .container {
+            width: 80%;
+            margin: 50px auto;
         }
-        table td {
-            background-color: #1f2937;
-        }
-        table tr:hover td {
-            background-color: #2563eb;
-            color: #ffffff;
-        }
-        table th, table td:first-child {
-            color: #ff0000; /* Vibrant red color */
+        canvas {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         @media screen and (max-width: 768px) {
             section {
@@ -76,138 +71,61 @@
                 font-size: 0.9rem;
             }
         }
-        @media screen and (max-width: 480px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            section h2 {
-                font-size: 1.6rem;
-            }
-            table th, table td {
-                padding: 0.5rem;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Project Overview</h1>
-        <h1><span>ಕಾವೇರಿ ವನ (Kaveri Vana)</span></h1>
+        <h1><span>ಕಾವೆರಿ ವನ (Kaveri Vana)</span></h1>
     </header>
     <section>
-        <h2>Welcome to Smart City Kaveri Vana (ಕಾವೇರಿ ವನ)</h2>
-        <p>
-            <strong>Introduction:</strong> Project 1: SmartCityX is a visionary smart city designed to harmonize modern technology with nature. There is a need for comprehensive solutions to transform public transport systems, reduce rush-hour congestion, and improve accessibility in underserved areas. These solutions should prioritize sustainable and inclusive mobility to ensure equal opportunities for all residents while fostering smarter, more connected, and eco-friendly cities.
-        </p> 
-        <img src="WhatsApp Image 2024-12-26 at 15.33.16_0030652e.jpg" alt="Map of Kaveri Vana Smart City">
-</section>
-        <h2>Land Distribution and Budget</h2>
+        <h2>Welcome to Smart City Kaveri Vana (ಕಾವೆರಿ ವನ)</h2>
+        
+        <!-- Updated Table -->
         <table>
             <tr>
-                <th>Sr No</th>
-                <th>Category</th>
-                <th>Land Distribution %</th>
-                <th>Details</th>
+                <th>Sl.No</th>
+                <th>Business Case Identified</th>
+                <th>Description</th>
+                <th>Owner</th>
+                <th>Probable Tools</th>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Green Spaces</td>
-                <td>15</td>
-                <td>
-                    <ul>
-                        <li>Parks and Gardens</li>
-                        <li>Agricultural Fields</li>
-                        <li>Waterfront Green Spaces</li>
-                        <li>Eco-friendly Zones</li>
-                        <li>Green Buffer Zones</li>
-                    </ul>
-                </td>
+                <td>Public Transport Modernization</td>
+                <td>Upgrade public transport with real-time tracking and eco-friendly vehicles.</td>
+                <td>Abhishek</td>
+                <td>BFS and DFS Traversals</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Residential Areas</td>
-                <td>26</td>
-                <td>
-                    <ul>
-                        <li>Apartments</li>
-                        <li>Villas</li>
-                        <li>Affordable Housing</li>
-                        <li>Schools and Healthcare Centers</li>
-                    </ul>
-                </td>
+                <td>Smart Scheduling for Rush Hours</td>
+                <td>Implement dynamic scheduling to reduce congestion during peak hours.</td>
+                <td>Shrivatsa</td>
+                <td>Heap</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Commercial Zones</td>
-                <td>9</td>
-                <td>
-                    <ul>
-                        <li>Offices</li>
-                        <li>Retail Spaces and Shopping Complexes</li>
-                        <li>High-density Areas for Businesses and Startups</li>
-                    </ul>
-                </td>
+                <td>Last-Mile Connectivity</td>
+                <td>Improve accessibility in underserved areas through feeder systems or e-mobility solutions.</td>
+                <td>Apeksha</td>
+                <td>Dijkstra's Algorithm</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Industrial Areas</td>
-                <td>5</td>
-                <td>
-                    <ul>
-                        <li>Smart Factories</li>
-                        <li>Logistics Hubs</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Utilities and Services</td>
-                <td>4</td>
-                <td>
-                    <ul>
-                        <li>Renewable Energy Installations</li>
-                        <li>Water Treatment Facilities</li>
-                        <li>Waste Management</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Tourist Spots</td>
-                <td>3</td>
-                <td>
-                    <ul>
-                        <li>Zoo</li>
-                        <li>Bird Sanctuary</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Recreational and Cultural Spaces</td>
-                <td>3</td>
-                <td>
-                    <ul>
-                        <li>Cultural Centers</li>
-                        <li>Sports Complexes</li>
-                        <li>Theaters</li>
-                        <li>Libraries</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Transportation Infrastructure</td>
-                <td>11</td>
-                <td>
-                    <ul>
-                        <li>Roads, Bike Lanes, Pedestrian Walkways, and Parking Spaces</li>
-                        <li>Smart Public Transport Hubs (Airport, Railway) and Electric Vehicle Charging Stations</li>
-                        <li>Toll Plaza</li>
-                    </ul>
-                </td>
+                <td>Inclusive Mobility for All</td>
+                <td>Create affordable, accessible transportation solutions for differently-abled and low-income residents.</td>
+                <td>Naveen</td>
+                <td>Prim's Algorithm</td>
             </tr>
         </table>
+
+        <!-- Map Image -->
+        <div class="container">
+            <h2 style="text-align: center;">Map of Kaveri Vana</h2>
+            <img src="CITY PLAN.jpg" alt="Map of Kaveri Vana" style="width: 100%; max-width: 800px;">
+        </div>
+
     </section>
 </body>
 </html>
