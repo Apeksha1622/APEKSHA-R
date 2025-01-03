@@ -1,16 +1,46 @@
-#include <iostream>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Code Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>C++ Code Example</h1>
+    <p>The following is a C++ code example:</p>
+
+    <pre><code>
+#include &lt;iostream&gt;
 using namespace std;
 
 // Function to display the elements of the array
 void displayArray(int arr[], int size) {
     if (size == 0) {
-        cout << "Array is empty." << endl;
+        cout &lt;&lt; "Array is empty." &lt;&lt; endl;
     } else {
-        cout << "Current Array: ";
-        for (int i = 0; i < size; i++) {
-            cout << arr[i] << " ";
+        cout &lt;&lt; "Current Array: ";
+        for (int i = 0; i &lt; size; i++) {
+            cout &lt;&lt; arr[i] &lt;&lt; " ";
         }
-        cout << endl;
+        cout &lt;&lt; endl;
     }
 }
 
@@ -22,33 +52,33 @@ int main() {
     int choice;
     do {
         // Display the menu
-        cout << "\nMenu:\n";
-        cout << "1. Add an element\n";
-        cout << "2. Remove the last element\n";
-        cout << "3. Display the array\n";
-        cout << "4. Exit\n";
-        cout << "Enter your choice: ";
-        cin >> choice;
+        cout &lt;&lt; "\nMenu:\n";
+        cout &lt;&lt; "1. Add an element\n";
+        cout &lt;&lt; "2. Remove the last element\n";
+        cout &lt;&lt; "3. Display the array\n";
+        cout &lt;&lt; "4. Exit\n";
+        cout &lt;&lt; "Enter your choice: ";
+        cin &gt;&gt; choice;
 
         switch (choice) {
             case 1: {
-                if (size < MAX_SIZE) {
+                if (size &lt; MAX_SIZE) {
                     int value;
-                    cout << "Enter the value to add: ";
-                    cin >> value;
+                    cout &lt;&lt; "Enter the value to add: ";
+                    cin &gt;&gt; value;
                     arr[size] = value; // Add the value to the array
                     size++;            // Increment the size
                 } else {
-                    cout << "Array is full. Cannot add more elements." << endl;
+                    cout &lt;&lt; "Array is full. Cannot add more elements." &lt;&lt; endl;
                 }
                 break;
             }
             case 2: {
-                if (size > 0) {
+                if (size &gt; 0) {
                     size--; // Decrease the size to "remove" the last element
-                    cout << "Last element removed." << endl;
+                    cout &lt;&lt; "Last element removed." &lt;&lt; endl;
                 } else {
-                    cout << "Array is empty. Nothing to remove." << endl;
+                    cout &lt;&lt; "Array is empty. Nothing to remove." &lt;&lt; endl;
                 }
                 break;
             }
@@ -57,14 +87,17 @@ int main() {
                 break;
             }
             case 4: {
-                cout << "Exiting program." << endl;
+                cout &lt;&lt; "Exiting program." &lt;&lt; endl;
                 break;
             }
             default: {
-                cout << "Invalid choice. Please try again." << endl;
+                cout &lt;&lt; "Invalid choice. Please try again." &lt;&lt; endl;
             }
         }
     } while (choice != 4);
 
     return 0;
 }
+    </code></pre>
+</body>
+</html>
